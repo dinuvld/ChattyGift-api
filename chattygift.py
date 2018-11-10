@@ -20,6 +20,12 @@ def test_connect():
 def display_message(message):
     print(message)
 
+counter = 0
+@socketio.on('my_pong', namespace='test')
+def increment_counter():
+    counter = counter + 1
+    print(counter)
+
 
 
 if __name__ == '__main__':
