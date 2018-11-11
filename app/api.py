@@ -19,7 +19,7 @@ def test_connect():
 
 @socketio.on('message_sent')
 def display_message(message):
-    data = "random" #ceea_ce_primesc_de_la_chatbotu_pizdii(message) #de apelat functia de la baieti
+    data = "stuff" #ceea_ce_primesc_de_la_chatbotu_pizdii(message) #de apelat functia de la baieti
     emit("response_sent", data)
 
 @socketio.on("my_event")
